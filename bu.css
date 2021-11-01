@@ -3,7 +3,7 @@
 }
 
 .contain {
-    margin-top: 50px;
+    margin-top: -150px;
 }
 
 .one {
@@ -45,7 +45,6 @@
     font-weight: lighter;
     text-align: center;
     padding: 10px;
-    border-bottom: 1px solid black;
 }
 
 .bubu {
