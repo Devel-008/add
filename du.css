@@ -3,30 +3,34 @@ h1 span {
 }
 
 .contain {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .one {
-    margin-left: 250px;
+    margin-left: 200px;
     font-size: 45px;
 }
 
-.jha {
+#jha {
     color: gray;
     font-family: arial;
     font-size: 30px;
     font-weight: lighter
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .left {
-    float: left;
     width: 20%;
     height: 400px;
     border: solid red 1px;
     border-radius: 10px;
     box-shadow: 5px 10px 18px #888888;
-    margin-top: 1px;
-    margin-left: 200px;
+    margin-top: 70px;
+    margin-left: 150px;
 }
 
 .we {
@@ -57,24 +61,34 @@ h1 span {
     font-weight: lighter;
 }
 
-.middle {
-    float: left;
-    width: 20%;
-    height: 400px;
-    border: solid red 1px;
-    border-radius: 10px;
-    margin-left: 100px;
-    margin-top: 1px;
-    box-shadow: 5px 10px 18px #888888;
-}
-
-.right {
-    float: left;
-    width: 20%;
-    height: 400px;
-    border: solid red 1px;
-    border-radius: 10px;
-    margin-left: 100px;
-    margin-top: 1px;
-    box-shadow: 5px 10px 18px #888888;
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    #jha {
+        display: none;
+    }
+    .contain {
+        width: 80%;
+    }
+    #circle {
+        right: 0;
+    }
+    .dudu {
+        color: blue;
+    }
+    hr {
+        display: none;
+    }
+    .we {
+        display: none;
+    }
+    .bubu {
+        display: none;
+    }
+    .left {
+        width: 90%;
+        height: 23vw;
+        margin-top: 30px;
+    }
 }
